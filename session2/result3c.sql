@@ -5,6 +5,9 @@ WHERE w.pid = p.pid
 AND EXISTS(
 SELECT * FROM Movie m
 WHERE m.mid = w.mid
-AND -- no director
+AND NOT EXISTS(
+SELECT * FROM Directs d
+WHERE d.mid = m.mid
+)
 )
 );
