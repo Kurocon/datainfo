@@ -4,5 +4,5 @@ INSERT INTO F VALUES("D", "A", TRUE, "Geen superkey")
 
 INSERT INTO F1 VALUES("ABC", "E", FALSE, "")
 INSERT INTO F2 VALUES("ABC", "F", FALSE, "")
-INSERT INTO F2 VALUES("E", "D", TRUE, "Geen superkey")
-INSERT INTO F2 VALUES("D", "A", TRUE, "Geen superkey")
+INSERT INTO F3 VALUES("E", "D", FALSE, "")
+INSERT INTO F4 VALUES("D", "A", FALSE, "")
